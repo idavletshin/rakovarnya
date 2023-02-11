@@ -21,6 +21,14 @@
 .shopping-cart__inner:not(._show) {
   display: none;
 }
+@media (max-width: 991.98px) {
+  .shopping-cart {
+    margin-top: calc(78px + 48 * ((100vw - 320px) / 920));
+  }
+  .shopping-cart__title {
+    margin-bottom: calc(16px + 14 * ((100vw - 320px) / 920));
+  }
+}
 .form {
   display: flex;
   flex-direction: column;

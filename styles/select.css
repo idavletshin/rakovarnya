@@ -1,10 +1,3 @@
-/* .header__location {
-  color: var(--color-white);
-  font-size: 1rem;
-  font-weight: 500;
-  line-height: 1.5;
-} */
-
 .select-location {
   position: relative;
   color: var(--color-white);
@@ -43,11 +36,11 @@
 }
 .select-location__text-field::before {
   left: 0.5rem;
-  background-image: url("styles/icons/location.svg");
+  background-image: url("../styles/icons/location.svg");
 }
 .select-location__text-field::after {
   right: 0.5rem;
-  background-image: url("styles/icons/arrow-drop-down.svg");
+  background-image: url("../styles/icons/arrow-drop-down.svg");
 }
 .select-location__text-field._active::after {
   transform: translateY(-50%) rotate(180deg);

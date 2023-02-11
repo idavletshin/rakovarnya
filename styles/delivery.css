@@ -45,3 +45,8 @@ ul.payment-method__images {
   margin-bottom: var(--space-xs);
   padding: 0 calc(var(--space-md) / 2);
 }
+@media (max-width: 991.98px) {
+  .delivery {
+    margin-top: calc(60px + 66 * ((100vw - 320px) / 920));
+  }
+}

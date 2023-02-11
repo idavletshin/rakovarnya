@@ -109,7 +109,7 @@ function min() {
     } else if (this.nextSibling.parentElement.id === 'cutlery-counter') {
 
     } else {
-      this.nextSibling.parentNode.parentElement.children[1].style.display = "flex";
+      this.nextSibling.parentElement.parentElement.firstElementChild.style.display = "inline-flex"
       this.nextSibling.parentElement.style.display = "none"
     }
   }

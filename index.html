@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;800&family=Montserrat:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <title>Главная - Рыжий рак</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container _container">
+        <div class="header__location select-location">
+          <div class="select-location__text-field">
+            <span>Выберите город</span>
+          </div>
+          <ul class="select-location__list">
+            <li class="select-location__item">Казань</li>
+            <li class="select-location__item">Набережные Челны</li>
+            <li class="select-location__item">Альметьевск</li>
+            <li class="select-location__item">Мамадыш</li>
+          </ul>
+        </div>
+        <a class="header__logo">
+          <img
+            src="/styles/images/logo_small.png"
+            width="40"
+            height="40"
+            alt="Логотип раковарни «Рыжий рак»"
+          />
+          <span class="header__logo-text">Рыжий рак</span>
+        </a>
+        <div class="header__actions">
+          <ul class="header-menu header__menu">
+            <li class="header-menu__item">
+              <a href="/" class="header-menu__link _active">Меню</a>
+            </li>
+            <li class="header-menu__item">
+              <a href="/delivery.html" class="header-menu__link">Доставка</a>
+            </li>
+            <li class="header-menu__item">
+              <a href="/" class="header-menu__link">О нас</a>
+            </li>
+            <li class="header-menu__item">
+              <!-- <div class="header-menu__location">Набережные Челны</div> -->
+              <div class="header-menu__location select-location">
+                <div class="select-location__text-field">
+                  <span>Выберите город</span>
+                </div>
+                <ul class="select-location__list">
+                  <li class="select-location__item">Казань</li>
+                  <li class="select-location__item">Набережные Челны</li>
+                  <li class="select-location__item">Альметьевск</li>
+                  <li class="select-location__item">Мамадыш</li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+          <!-- _active | none class -->
+          <a href="/shopping-cart.html" class="header__cart _active">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M22 9.00002H17.21L12.83 2.44002C12.64 2.16002 12.32 2.02002 12 2.02002C11.68 2.02002 11.36 2.16002 11.17 2.45002L6.79 9.00002H2C1.45 9.00002 1 9.45002 1 10C1 10.09 1.01 10.18 1.04 10.27L3.58 19.54C3.81 20.38 4.58 21 5.5 21H18.5C19.42 21 20.19 20.38 20.43 19.54L22.97 10.27L23 10C23 9.45002 22.55 9.00002 22 9.00002ZM12 4.80002L14.8 9.00002H9.2L12 4.80002ZM18.5 19L5.51 19.01L3.31 11H20.7L18.5 19ZM12 13C10.9 13 10 13.9 10 15C10 16.1 10.9 17 12 17C13.1 17 14 16.1 14 15C14 13.9 13.1 13 12 13Z"
+                fill="currentColor"
+              />
+            </svg>
+            <span class="header__counter">99</span>
+            <span class="header__cost">523p</span>
+          </a>
+          <div class="header__burger burger">
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main-index">
+      <section class="banner">
+        <img
+          src="/styles/images/logo_large.png"
+          width="300"
+          height="300"
+          alt="Логотип раковарни «Рыжий рак»"
+        />
+        <h1 class="banner__main-title _main-title">Рыжий рак</h1>
+      </section>
+      <section class="category-menu _container">
+        <ul class="category-menu__list">
+          <li class="category-menu__item">
+            <a href="#menu1" class="category-menu__link _active">
+              <span>Все меню</span>
+            </a>
+          </li>
+          <li class="category-menu__item">
+            <a href="#menu1" class="category-menu__link">
+              <span>Салаты</span>
+            </a>
+          </li>
+          <li class="category-menu__item">
+            <a href="#menu2" class="category-menu__link">
+              <span>Холодные закуски</span>
+            </a>
+          </li>
+          <li class="category-menu__item">
+            <a href="#menu3" class="category-menu__link">
+              <span>Супы</span>
+            </a>
+          </li>
+          <li class="category-menu__item">
+            <a href="#menu4" class="category-menu__link">
+              <span>Горячие закуски</span>
+            </a>
+          </li>
+          <li class="category-menu__item">
+            <a href="#menu5" class="category-menu__link">
+              <span>Горячие блюда</span>
+            </a>
+          </li>
+          <li class="category-menu__item">
+            <a href="#menu6" class="category-menu__link">
+              <span>Снеки</span>
+            </a>
+          </li>
+          <li class="category-menu__item">
+            <a href="#menu7" class="category-menu__link">
+              <span>Гарниры</span>
+            </a>
+          </li>
+          <li class="category-menu__item">
+            <a href="#menu8" class="category-menu__link">
+              <span>Соусы</span>
+            </a>
+          </li>
+          <li class="category-menu__item">
+            <a href="#menu9" class="category-menu__link">
+              <span>Паста</span>
+            </a>
+          </li>
+          <li class="category-menu__item">
+            <a href="#menu10" class="category-menu__link">
+              <span>Пицца</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section class="products _container">
+        <h2 id="menu1" class="products__title _title">Салаты</h2>
+        <div class="products__items">
+          <article class="item-product products__item">
+            <a class="item-product__image">
+              <img src="/styles/images/product_1.png" alt="" />
+            </a>
+            <a class="item-product__content">
+              <h3 class="item-product__title">
+                Цезарь с курицей
+                <small>240 гр</small>
+              </h3>
+              <div class="item-product__text">
+                Обжаренное куриное филе с листьями салата Романо и Айсберг,
+                томатами Черри, хрустящими гренками и крошкой из пармезана, под
+                соусом Цезарь
+              </div>
+            </a>
+            <div class="actions-product item-product__actions">
+              <div class="actions-product__price">270 Р</div>
+              <button type="button" class="actions-product__button">
+                <img
+                  src="/styles/icons/plus.svg"
+                  width="13"
+                  height="13"
+                  alt=""
+                />
+                Добавить
+              </button>
+              <div
+                class="counter actions-product__counter"
+                style="display: none"
+              >
+                <button class="counter__decrement-btn" type="button">
+                  <img src="/styles/icons/minus.svg" alt="Убрать" />
+                </button>
+                <input class="counter__value" type="text" value="1" disabled />
+                <button class="counter__increment-btn" type="button">
+                  <img src="/styles/icons/plus.svg" alt="Добавить" />
+                </button>
+              </div>
+            </div>
+          </article>
+          <article class="item-product products__item">
+            <a class="item-product__image">
+              <img src="/styles/images/product_1.png" alt="" />
+            </a>
+            <a class="item-product__content">
+              <h3 class="item-product__title">
+                Пивной набор из рыбы холодного копчения
+                <small>240 гр</small>
+              </h3>
+              <div class="item-product__text">Форель горячего копчения</div>
+            </a>
+            <div class="actions-product item-product__actions">
+              <div class="actions-product__price">270 Р</div>
+              <button type="button" class="actions-product__button">
+                <img
+                  src="/styles/icons/plus.svg"
+                  width="13"
+                  height="13"
+                  alt=""
+                />
+                Добавить
+              </button>
+              <div
+                class="counter actions-product__counter"
+                style="display: none"
+              >
+                <button class="counter__decrement-btn" type="button">
+                  <img src="/styles/icons/minus.svg" alt="Убрать" />
+                </button>
+                <input class="counter__value" type="text" value="1" disabled />
+                <button class="counter__increment-btn" type="button">
+                  <img src="/styles/icons/plus.svg" alt="Добавить" />
+                </button>
+              </div>
+            </div>
+          </article>
+          <article class="item-product products__item">
+            <a class="item-product__image">
+              <img src="/styles/images/product_1.png" alt="" />
+            </a>
+            <a class="item-product__content">
+              <h3 class="item-product__title">
+                Пивной набор из рыбы холодного копчения
+                <small>240 гр</small>
+              </h3>
+              <div class="item-product__text">Форель горячего копчения</div>
+            </a>
+            <div class="actions-product item-product__actions">
+              <div class="actions-product__price">270 Р</div>
+              <button type="button" class="actions-product__button">
+                <img
+                  src="/styles/icons/plus.svg"
+                  width="13"
+                  height="13"
+                  alt=""
+                />
+                Добавить
+              </button>
+              <div
+                class="counter actions-product__counter"
+                style="display: none"
+              >
+                <button class="counter__decrement-btn" type="button">
+                  <img src="/styles/icons/minus.svg" alt="Убрать" />
+                </button>
+                <input class="counter__value" type="text" value="1" disabled />
+                <button class="counter__increment-btn" type="button">
+                  <img src="/styles/icons/plus.svg" alt="Добавить" />
+                </button>
+              </div>
+            </div>
+          </article>
+          <article class="item-product products__item">
+            <a class="item-product__image">
+              <img src="/styles/images/product_1.png" alt="" />
+            </a>
+            <a class="item-product__content">
+              <h3 class="item-product__title">
+                Пивной набор из рыбы холодного копчения
+                <small>240 гр</small>
+              </h3>
+              <div class="item-product__text">Форель горячего копчения</div>
+            </a>
+            <div class="actions-product item-product__actions">
+              <div class="actions-product__price">270 Р</div>
+              <button type="button" class="actions-product__button">
+                <img
+                  src="/styles/icons/plus.svg"
+                  width="13"
+                  height="13"
+                  alt=""
+                />
+                Добавить
+              </button>
+              <div
+                class="counter actions-product__counter"
+                style="display: none"
+              >
+                <button class="counter__decrement-btn" type="button">
+                  <img src="/styles/icons/minus.svg" alt="Убрать" />
+                </button>
+                <input class="counter__value" type="text" value="1" disabled />
+                <button class="counter__increment-btn" type="button">
+                  <img src="/styles/icons/plus.svg" alt="Добавить" />
+                </button>
+              </div>
+            </div>
+          </article>
+          <article class="item-product products__item">
+            <a class="item-product__image">
+              <img src="/styles/images/product_1.png" alt="" />
+            </a>
+            <a class="item-product__content">
+              <h3 class="item-product__title">
+                Пивной набор из рыбы холодного копчения
+                <small>240 гр</small>
+              </h3>
+              <div class="item-product__text">Форель горячего копчения</div>
+            </a>
+            <div class="actions-product item-product__actions">
+              <div class="actions-product__price">270 Р</div>
+              <button type="button" class="actions-product__button">
+                <img
+                  src="/styles/icons/plus.svg"
+                  width="13"
+                  height="13"
+                  alt=""
+                />
+                Добавить
+              </button>
+              <div
+                class="counter actions-product__counter"
+                style="display: none"
+              >
+                <button class="counter__decrement-btn" type="button">
+                  <img src="/styles/icons/minus.svg" alt="Убрать" />
+                </button>
+                <input class="counter__value" type="text" value="1" disabled />
+                <button class="counter__increment-btn" type="button">
+                  <img src="/styles/icons/plus.svg" alt="Добавить" />
+                </button>
+              </div>
+            </div>
+          </article>
+          <article class="item-product products__item">
+            <a class="item-product__image">
+              <img src="/styles/images/product_1.png" alt="" />
+            </a>
+            <a class="item-product__content">
+              <h3 class="item-product__title">
+                Пивной набор из рыбы холодного копчения
+                <small>240 гр</small>
+              </h3>
+              <div class="item-product__text">Форель горячего копчения</div>
+            </a>
+            <div class="actions-product item-product__actions">
+              <div class="actions-product__price">270 Р</div>
+              <button type="button" class="actions-product__button">
+                <img
+                  src="/styles/icons/plus.svg"
+                  width="13"
+                  height="13"
+                  alt=""
+                />
+                Добавить
+              </button>
+              <div
+                class="counter actions-product__counter"
+                style="display: none"
+              >
+                <button class="counter__decrement-btn" type="button">
+                  <img src="/styles/icons/minus.svg" alt="Убрать" />
+                </button>
+                <input class="counter__value" type="text" value="1" disabled />
+                <button class="counter__increment-btn" type="button">
+                  <img src="/styles/icons/plus.svg" alt="Добавить" />
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+        <h2 id="menu2" class="products__title _title">Холодные закуски</h2>
+        <div class="products__items">
+          <article class="item-product products__item">
+            <a class="item-product__image">
+              <img src="/styles/images/product_1.png" alt="" />
+            </a>
+            <a class="item-product__content">
+              <h3 class="item-product__title">
+                Цезарь с курицей
+                <small>240 гр</small>
+              </h3>
+              <div class="item-product__text">
+                Обжаренное куриное филе с листьями салата Романо и Айсберг,
+                томатами Черри, хрустящими гренками и крошкой из пармезана, под
+                соусом Цезарь
+              </div>
+            </a>
+            <div class="actions-product item-product__actions">
+              <div class="actions-product__price">270 Р</div>
+              <button type="button" class="actions-product__button">
+                <img
+                  src="/styles/icons/plus.svg"
+                  width="13"
+                  height="13"
+                  alt=""
+                />
+                Добавить
+              </button>
+              <div
+                class="counter actions-product__counter"
+                style="display: none"
+              >
+                <button class="counter__decrement-btn" type="button">
+                  <img src="/styles/icons/minus.svg" alt="Убрать" />
+                </button>
+                <input class="counter__value" type="text" value="1" disabled />
+                <button class="counter__increment-btn" type="button">
+                  <img src="/styles/icons/plus.svg" alt="Добавить" />
+                </button>
+              </div>
+            </div>
+          </article>
+          <article class="item-product products__item">
+            <a class="item-product__image">
+              <img src="/styles/images/product_1.png" alt="" />
+            </a>
+            <a class="item-product__content">
+              <h3 class="item-product__title">
+                Пивной набор из рыбы холодного копчения
+                <small>240 гр</small>
+              </h3>
+              <div class="item-product__text">Форель горячего копчения</div>
+            </a>
+            <div class="actions-product item-product__actions">
+              <div class="actions-product__price">270 Р</div>
+              <button type="button" class="actions-product__button">
+                <img
+                  src="/styles/icons/plus.svg"
+                  width="13"
+                  height="13"
+                  alt=""
+                />
+                Добавить
+              </button>
+              <div
+                class="counter actions-product__counter"
+                style="display: none"
+              >
+                <button class="counter__decrement-btn" type="button">
+                  <img src="/styles/icons/minus.svg" alt="Убрать" />
+                </button>
+                <input class="counter__value" type="text" value="1" disabled />
+                <button class="counter__increment-btn" type="button">
+                  <img src="/styles/icons/plus.svg" alt="Добавить" />
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+        <h2 id="menu3" class="products__title _title">Супы</h2>
+        <div class="products__items">
+          <article class="item-product products__item">
+            <a class="item-product__image">
+              <img src="/styles/images/product_1.png" alt="" />
+            </a>
+            <a class="item-product__content">
+              <h3 class="item-product__title">
+                Цезарь с курицей
+                <small>240 гр</small>
+              </h3>
+              <div class="item-product__text">
+                Обжаренное куриное филе с листьями салата Романо и Айсберг,
+                томатами Черри, хрустящими гренками и крошкой из пармезана, под
+                соусом Цезарь
+              </div>
+            </a>
+            <div class="actions-product item-product__actions">
+              <div class="actions-product__price">270 Р</div>
+              <button type="button" class="actions-product__button">
+                <img
+                  src="/styles/icons/plus.svg"
+                  width="13"
+                  height="13"
+                  alt=""
+                />
+                Добавить
+              </button>
+              <div
+                class="counter actions-product__counter"
+                style="display: none"
+              >
+                <button class="counter__decrement-btn" type="button">
+                  <img src="/styles/icons/minus.svg" alt="Убрать" />
+                </button>
+                <input class="counter__value" type="text" value="1" disabled />
+                <button class="counter__increment-btn" type="button">
+                  <img src="/styles/icons/plus.svg" alt="Добавить" />
+                </button>
+              </div>
+            </div>
+          </article>
+          <article class="item-product products__item">
+            <a class="item-product__image">
+              <img src="/styles/images/product_1.png" alt="" />
+            </a>
+            <a class="item-product__content">
+              <h3 class="item-product__title">
+                Пивной набор из рыбы холодного копчения
+                <small>240 гр</small>
+              </h3>
+              <div class="item-product__text">Форель горячего копчения</div>
+            </a>
+            <div class="actions-product item-product__actions">
+              <div class="actions-product__price">270 Р</div>
+              <button type="button" class="actions-product__button">
+                <img
+                  src="/styles/icons/plus.svg"
+                  width="13"
+                  height="13"
+                  alt=""
+                />
+                Добавить
+              </button>
+              <div
+                class="counter actions-product__counter"
+                style="display: none"
+              >
+                <button class="counter__decrement-btn" type="button">
+                  <img src="/styles/icons/minus.svg" alt="Убрать" />
+                </button>
+                <input class="counter__value" type="text" value="1" disabled />
+                <button class="counter__increment-btn" type="button">
+                  <img src="/styles/icons/plus.svg" alt="Добавить" />
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+        <h2 id="menu4" class="products__title _title">Горячие закуски</h2>
+        <div class="products__items">
+          <article class="item-product products__item">
+            <a class="item-product__image">
+              <img src="/styles/images/product_1.png" alt="" />
+            </a>
+            <a class="item-product__content">
+              <h3 class="item-product__title">
+                Цезарь с курицей
+                <small>240 гр</small>
+              </h3>
+              <div class="item-product__text">
+                Обжаренное куриное филе с листьями салата Романо и Айсберг,
+                томатами Черри, хрустящими гренками и крошкой из пармезана, под
+                соусом Цезарь
+              </div>
+            </a>
+            <div class="actions-product item-product__actions">
+              <div class="actions-product__price">270 Р</div>
+              <button type="button" class="actions-product__button">
+                <img
+                  src="/styles/icons/plus.svg"
+                  width="13"
+                  height="13"
+                  alt=""
+                />
+                Добавить
+              </button>
+              <div
+                class="counter actions-product__counter"
+                style="display: none"
+              >
+                <button class="counter__decrement-btn" type="button">
+                  <img src="/styles/icons/minus.svg" alt="Убрать" />
+                </button>
+                <input class="counter__value" type="text" value="1" disabled />
+                <button class="counter__increment-btn" type="button">
+                  <img src="/styles/icons/plus.svg" alt="Добавить" />
+                </button>
+              </div>
+            </div>
+          </article>
+          <article class="item-product products__item">
+            <a class="item-product__image">
+              <img src="/styles/images/product_1.png" alt="" />
+            </a>
+            <a class="item-product__content">
+              <h3 class="item-product__title">
+                Пивной набор из рыбы холодного копчения
+                <small>240 гр</small>
+              </h3>
+              <div class="item-product__text">Форель горячего копчения</div>
+            </a>
+            <div class="actions-product item-product__actions">
+              <div class="actions-product__price">270 Р</div>
+              <button type="button" class="actions-product__button">
+                <img
+                  src="/styles/icons/plus.svg"
+                  width="13"
+                  height="13"
+                  alt=""
+                />
+                Добавить
+              </button>
+              <div
+                class="counter actions-product__counter"
+                style="display: none"
+              >
+                <button class="counter__decrement-btn" type="button">
+                  <img src="/styles/icons/minus.svg" alt="Убрать" />
+                </button>
+                <input class="counter__value" type="text" value="1" disabled />
+                <button class="counter__increment-btn" type="button">
+                  <img src="/styles/icons/plus.svg" alt="Добавить" />
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+      <div id="detail-modal" class="modal">
+        <div class="modal-dialog _big">
+          <button id="modal-btn" class="modal-dialog__close">
+            <img
+              src="/styles/icons/close.svg"
+              width="28"
+              height="28"
+              alt="Закрыть"
+            />
+          </button>
+          <div class="modal__content">
+            <div class="modal__image">
+              <img src="/styles/images/product_1.png" alt="" />
+            </div>
+            <div class="modal__box">
+              <h2 class="modal__title">
+                Цезарь с тигровыми креветками
+                <small>240 гр</small>
+              </h2>
+              <div class="modal__text">
+                Обжаренные в соевом соусе с чесноком креветки, с листьями салата
+                Романо и Айсберг, томатами Черри, хрустящими гренками под соусом
+                Цезарь
+              </div>
+              <div class="actions-product">
+                <div class="actions-product__price">270 Р</div>
+                <button type="button" class="actions-product__button">
+                  <img
+                    src="/styles/icons/plus.svg"
+                    width="13"
+                    height="13"
+                    alt=""
+                  />
+                  Добавить
+                </button>
+                <div
+                  class="counter actions-product__counter"
+                  style="display: none"
+                >
+                  <button class="counter__decrement-btn" type="button">
+                    <img src="/styles/icons/minus.svg" alt="Убрать" />
+                  </button>
+                  <input
+                    class="counter__value"
+                    type="text"
+                    value="1"
+                    disabled
+                  />
+                  <button class="counter__increment-btn" type="button">
+                    <img src="/styles/icons/plus.svg" alt="Добавить" />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="/js/main.js"></script>
+    <script>
+      document.querySelectorAll(".item-product").forEach(function (el) {
+        el.addEventListener("click", function (event) {
+          if (!event.target.closest(".actions-product.item-product__actions")) {
+            modal.style.display = "flex";
+            document.body.classList.add("_overflow-hidden");
+          }
+        });
+      });
+
+      let modal = document.querySelector(".modal");
+
+      let closeModal = document.getElementsByClassName(
+        "modal-dialog__close"
+      )[0];
+
+      closeModal.onclick = function () {
+        modal.style.display = "none";
+        document.body.classList.remove("_overflow-hidden");
+      };
+
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+          document.body.classList.remove("_overflow-hidden");
+        }
+      };
+    </script>
+  </body>
+</html>

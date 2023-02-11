@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;800&family=Montserrat:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/shopping-cart.css" />
+    <title>Корзина - Рыжий рак</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container _container">
+        <div class="header__location select-location">
+          <div class="select-location__text-field">
+            <span>Выберите город</span>
+          </div>
+          <ul class="select-location__list">
+            <li class="select-location__item">Казань</li>
+            <li class="select-location__item">Набережные Челны</li>
+            <li class="select-location__item">Альметьевск</li>
+            <li class="select-location__item">Мамадыш</li>
+          </ul>
+        </div>
+        <a href="/" class="header__logo _inner">
+          <img
+            src="/styles/images/logo_small.png"
+            width="40"
+            height="40"
+            alt="Логотип раковарни «Рыжий рак»"
+          />
+          <span class="header__logo-text">Рыжий рак</span>
+        </a>
+        <div class="header__actions">
+          <ul class="header-menu header__menu">
+            <li class="header-menu__item">
+              <a href="/" class="header-menu__link">Меню</a>
+            </li>
+            <li class="header-menu__item">
+              <a href="/delivery.html" class="header-menu__link">Доставка</a>
+            </li>
+            <li class="header-menu__item">
+              <a href="/" class="header-menu__link">О нас</a>
+            </li>
+            <li class="header-menu__item">
+              <div class="header-menu__location select-location">
+                <div class="select-location__text-field">
+                  <span>Выберите город</span>
+                </div>
+                <ul class="select-location__list">
+                  <li class="select-location__item">Казань</li>
+                  <li class="select-location__item">Набережные Челны</li>
+                  <li class="select-location__item">Альметьевск</li>
+                  <li class="select-location__item">Мамадыш</li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+          <!-- _active | none class -->
+          <a href="/shopping-cart.html" class="header__cart">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M22 9.00002H17.21L12.83 2.44002C12.64 2.16002 12.32 2.02002 12 2.02002C11.68 2.02002 11.36 2.16002 11.17 2.45002L6.79 9.00002H2C1.45 9.00002 1 9.45002 1 10C1 10.09 1.01 10.18 1.04 10.27L3.58 19.54C3.81 20.38 4.58 21 5.5 21H18.5C19.42 21 20.19 20.38 20.43 19.54L22.97 10.27L23 10C23 9.45002 22.55 9.00002 22 9.00002ZM12 4.80002L14.8 9.00002H9.2L12 4.80002ZM18.5 19L5.51 19.01L3.31 11H20.7L18.5 19ZM12 13C10.9 13 10 13.9 10 15C10 16.1 10.9 17 12 17C13.1 17 14 16.1 14 15C14 13.9 13.1 13 12 13Z"
+                fill="currentColor"
+              />
+            </svg>
+            <span class="header__counter">99</span>
+            <span class="header__cost">523p</span>
+          </a>
+          <div class="header__burger burger">
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main-inner">
+      <div class="shopping-cart _container">
+        <div id="step-1" class="shopping-cart__inner _show">
+          <h2 class="shopping-cart__title _title">Корзина</h2>
+          <form class="form shopping-cart__form">
+            <div class="form__order-list">
+              <div class="order-item form__order-item">
+                <div class="order-item__image">
+                  <img
+                    src="/styles/images/product_1.png"
+                    width="100"
+                    height="100"
+                    alt=""
+                  />
+                </div>
+                <div class="order-item__box">
+                  <div class="order-item__label">
+                    Цезарь с курицей
+                    <small>240 гр</small>
+                  </div>
+                  <div class="actions-product">
+                    <div class="actions-product__price">270 Р</div>
+                    <button type="button" class="actions-product__button">
+                      <img
+                        src="/styles/icons/plus.svg"
+                        width="13"
+                        height="13"
+                        alt=""
+                      />
+                      Добавить
+                    </button>
+                    <div
+                      class="counter actions-product__counter"
+                      style="display: none"
+                    >
+                      <button class="counter__decrement-btn" type="button">
+                        <img src="/styles/icons/minus.svg" alt="Убрать" />
+                      </button>
+                      <input
+                        class="counter__value"
+                        type="text"
+                        value="1"
+                        disabled
+                      />
+                      <button class="counter__increment-btn" type="button">
+                        <img src="/styles/icons/plus.svg" alt="Добавить" />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <button type="button" class="order-item__button">
+                  <img src="/styles/icons/trash.svg" alt="Удалить" />
+                </button>
+              </div>
+              <div class="order-item form__order-item">
+                <div class="order-item__image">
+                  <img
+                    src="/styles/images/product_1.png"
+                    width="100"
+                    height="100"
+                    alt=""
+                  />
+                </div>
+                <div class="order-item__box">
+                  <div class="order-item__label">
+                    Цезарь с курицей
+                    <small>240 гр</small>
+                  </div>
+                  <div class="actions-product">
+                    <div class="actions-product__price">270 Р</div>
+                    <button type="button" class="actions-product__button">
+                      <img
+                        src="/styles/icons/plus.svg"
+                        width="13"
+                        height="13"
+                        alt=""
+                      />
+                      Добавить
+                    </button>
+                    <div
+                      class="counter actions-product__counter"
+                      style="display: none"
+                    >
+                      <button class="counter__decrement-btn" type="button">
+                        <img src="/styles/icons/minus.svg" alt="Убрать" />
+                      </button>
+                      <input
+                        class="counter__value"
+                        type="text"
+                        value="1"
+                        disabled
+                      />
+                      <button class="counter__increment-btn" type="button">
+                        <img src="/styles/icons/plus.svg" alt="Добавить" />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <button type="button" class="order-item__button">
+                  <img src="/styles/icons/trash.svg" alt="Удалить" />
+                </button>
+              </div>
+              <div class="order-item form__order-item _cutlery">
+                <div class="order-item__image">
+                  <img
+                    src="/styles/icons/fork_spoon.svg"
+                    width="32"
+                    height="32"
+                    alt="Столовые приборы"
+                  />
+                </div>
+                <div class="order-item__box">
+                  <div class="order-item__label">Столовые приборы</div>
+                  <div class="actions-product">
+                    <div
+                      id="cutlery-counter"
+                      class="counter actions-product__counter"
+                    >
+                      <button class="counter__decrement-btn" type="button">
+                        <img src="/styles/icons/minus.svg" alt="Убрать" />
+                      </button>
+                      <input
+                        class="counter__value"
+                        type="text"
+                        value="1"
+                        disabled
+                      />
+                      <button class="counter__increment-btn" type="button">
+                        <img src="/styles/icons/plus.svg" alt="Добавить" />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button type="button" class="form__button hide-block-button">
+              Оформить заказ — 820 ₽
+            </button>
+          </form>
+        </div>
+        <div id="step-2" class="shopping-cart__inner">
+          <h2 class="shopping-cart__title _title">
+            <a class="shopping-cart__back-button hide-block-button">
+              <img
+                src="/styles/icons/arrow-back.svg"
+                width="32"
+                height="32"
+                alt="Вернуться назад"
+              />
+            </a>
+            Способ доставки
+          </h2>
+          <form class="form shopping-cart__form">
+            <div class="tabs form__tabs">
+              <div class="tabs__nav">
+                <div class="tabs__item">
+                  <input
+                    type="radio"
+                    id="delivery"
+                    name="delivery-method"
+                    value="Доставка"
+                    checked
+                  />
+                  <label for="delivery">Доставка</label>
+                </div>
+                <div class="tabs__item">
+                  <input
+                    type="radio"
+                    id="customer-pickup"
+                    name="delivery-method"
+                    value="Самовывоз"
+                  />
+                  <label for="customer-pickup" class="tabs__item"
+                    >Самовывоз</label
+                  >
+                </div>
+              </div>
+              <div class="tabs__content">
+                <div id="delivery-content" class="tabs__pane _show">
+                  <h3 class="tabs__subtitle _subtitle">Адрес доставки</h3>
+                  <div class="form-group tabs__form-group">
+                    <label for="street" class="form-label">Адрес</label>
+                    <input
+                      class="form-control"
+                      type="text"
+                      id="street"
+                      placeholder="Улица"
+                    />
+                  </div>
+                  <div class="tabs__form-row">
+                    <div class="form-group tabs__form-group col-25">
+                      <input
+                        class="form-control"
+                        type="text"
+                        id="house"
+                        placeholder="Дом"
+                      />
+                    </div>
+                    <div class="form-group tabs__form-group col-25">
+                      <input
+                        class="form-control"
+                        type="text"
+                        id="entrance"
+                        placeholder="Подъезд"
+                      />
+                    </div>
+                    <div class="form-group tabs__form-group col-25">
+                      <input
+                        class="form-control"
+                        type="text"
+                        id="floor"
+                        placeholder="Этаж"
+                      />
+                    </div>
+                    <div class="form-group tabs__form-group col-25">
+                      <input
+                        class="form-control"
+                        type="text"
+                        id="apartment"
+                        placeholder="Кв."
+                      />
+                    </div>
+                  </div>
+                  <div class="tabs__form-row">
+                    <div class="form-group tabs__form-group col-50">
+                      <label for="street" class="form-label">Ваше имя</label>
+                      <input
+                        class="form-control"
+                        type="text"
+                        id="name"
+                        placeholder="Имя"
+                      />
+                    </div>
+                    <div class="form-group tabs__form-group col-50">
+                      <label for="street" class="form-label">Телефон</label>
+                      <input
+                        class="form-control"
+                        type="tel"
+                        id="phone"
+                        placeholder="+7"
+                      />
+                    </div>
+                  </div>
+                  <div class="form-group tabs__form-group">
+                    <label for="message" class="form-label"
+                      >Комментарий к заказу:</label
+                    >
+                    <textarea
+                      id="message"
+                      class="form-control"
+                      rows="4"
+                      placeholder="Ваш комментарий"
+                    ></textarea>
+                  </div>
+                </div>
+                <div id="customer-pickup-content" class="tabs__pane">
+                  <h3 class="tabs__subtitle _subtitle">Адрес самовывоза</h3>
+                  <div class="tabs__delivery-address _text">
+                    Новый Город, Центральный район, Набережные Челны, Республика
+                    Татарстан, 423810
+                  </div>
+                </div>
+                <hr class="divider" />
+                <h3 class="tabs__subtitle _subtitle">Способ оплаты</h3>
+                <div class="form-group tabs__form-group">
+                  <label class="radio-button">
+                    Онлайн
+                    <input type="radio" name="payment-method" checked />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="radio-button">
+                    Картой при получении
+                    <input type="radio" name="payment-method" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="radio-button">
+                    Наличкой при получении
+                    <input type="radio" name="payment-method" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <hr class="divider" />
+                <div class="tabs__form-row">
+                  <div class="calc tabs__calc col-25">
+                    <div class="calc__label _text">Итого с доставкой</div>
+                    <div class="calc__price">920 ₽</div>
+                  </div>
+                  <div class="calc tabs__calc col-25">
+                    <div class="calc__label _text">Сумма заказа</div>
+                    <div class="calc__price">820 ₽</div>
+                  </div>
+                  <div class="calc tabs__calc col-25">
+                    <div class="calc__label _text">Доставка</div>
+                    <div class="calc__price">100 ₽</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button type="button" id="order-create" class="form__button">
+              Сделать заказ
+            </button>
+          </form>
+        </div>
+      </div>
+      <div id="order-modal" class="modal">
+        <div class="modal-dialog">
+          <button id="modal-btn" class="modal-dialog__close">
+            <img
+              src="/styles/icons/close.svg"
+              width="28"
+              height="28"
+              alt="Закрыть"
+            />
+          </button>
+          <div class="modal__content">
+            <h2 class="modal__title">Заказ успешно оформлен</h2>
+            <div class="modal__text">
+              В ближайшее время с вами свяжется оператор
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="/js/main.js"></script>
+    <script>
+      let modal = document.querySelector(".modal");
+
+      let orderCreate = document.getElementById("order-create");
+
+      let closeModal = document.getElementsByClassName(
+        "modal-dialog__close"
+      )[0];
+
+      orderCreate.onclick = function () {
+        modal.style.display = "flex";
+        document.body.classList.add("_scroll");
+      };
+
+      closeModal.onclick = function () {
+        modal.style.display = "none";
+        document.body.classList.remove("_scroll");
+      };
+
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
+    </script>
+  </body>
+</html>

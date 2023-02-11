@@ -1,0 +1,46 @@
+/* radio button */
+.radio-button {
+  position: relative;
+  display: block;
+  padding-left: var(--space-lg);
+  margin-bottom: var(--space-unit);
+  cursor: pointer;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.4;
+  user-select: none;
+}
+.radio-button input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.checkmark::before,
+.checkmark::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  margin: calc(var(--space-unit) / var(--space-unit));
+  width: 1.125rem;
+  height: 1.125rem;
+  border-radius: 50%;
+  transition: 0.28s ease;
+  z-index: 0;
+}
+.checkmark::before {
+  border: 0.125rem solid var(--color-white-dark);
+}
+.checkmark:after {
+  display: none;
+}
+.radio-button input:checked ~ .checkmark:after {
+  display: block;
+  background: var(--color-danger-light);
+  animation: ripple 0.2s linear forwards;
+}
+.radio-button .checkmark:after {
+  transform: scale(0.5);
+}

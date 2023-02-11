@@ -1,0 +1,47 @@
+.delivery {
+  max-width: 51.875rem;
+  width: 100%;
+  margin-top: 7.875rem;
+}
+.delivery__title {
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--space-lg);
+  text-align: left;
+}
+.delivery__items,
+.payment-method__items {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: calc(var(--space-md) / -2);
+  margin-right: calc(var(--space-md) / -2);
+}
+.delivery__item {
+  margin-bottom: calc(var(--space-md) * 2);
+}
+.delivery__subtitle {
+  margin-bottom: calc(var(--space-sm) * 2);
+}
+.payment-method__label {
+  margin-bottom: var(--space-unit);
+  color: var(--color-white);
+  font-family: var(--manrope-font);
+  font-size: 0.875rem;
+  font-weight: 800;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+.payment-method__description {
+  margin-bottom: calc(var(--space-sm) * 2);
+}
+ul.payment-method__images {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-left: calc(var(--space-md) / -2);
+  margin-right: calc(var(--space-md) / -2);
+}
+.payment-method__image {
+  margin-bottom: var(--space-xs);
+  padding: 0 calc(var(--space-md) / 2);
+}

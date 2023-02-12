@@ -207,7 +207,7 @@ textarea.form-control {
   max-width: 21.25rem;
 }
 .order-item__box .actions-product {
-  /* margin-top: auto; */
+  margin-top: auto;
 }
 .order-item__image {
   position: relative;
@@ -261,6 +261,11 @@ textarea.form-control {
 }
 .order-item__button:active {
   background: var(--color-black-lighter);
+}
+.order-item__button img {
+  min-width: 1.5rem;
+  width: 1.5rem;
+  height: 1.5rem;
 }
 .order-item + .order-item {
   position: relative;

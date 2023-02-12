@@ -54,10 +54,10 @@ document.querySelectorAll('.category-menu__link').forEach(link => {
     const target = document.querySelector(id);
 
     let offsetTop = 0;
-    if (window.innerWidth < 991.98) {
-      offsetTop = eval("170 + 0 * ((100 - 320) / 920)");
-    } else if (window.innerWidth < 767.98) {
+    if (window.innerWidth < 767.98) {
       offsetTop = eval("110 + 0 * ((100 - 320) / 920)");
+    } else if (window.innerWidth < 991.98) {
+      offsetTop = eval("170 + 0 * ((100 - 320) / 920)");
     } else {
       offsetTop = 200;
     }

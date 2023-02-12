@@ -586,9 +586,9 @@ input[type="button"] {
   border: none;
 }
 .counter__value:disabled {
-  -webkit-text-fill-color: var(--color-white)
+  -webkit-text-fill-color: var(--color-white);
   background: var(--color-danger-light);
-  -webkit-appearance: none; 
+  -webkit-appearance: none;
   opacity: 1;
 }
 .actions-product__counter button {

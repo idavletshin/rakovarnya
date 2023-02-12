@@ -580,6 +580,7 @@ body {
 }
 .counter__value:disabled {
   background: var(--color-danger-light);
+  opacity: 1;
 }
 .actions-product__counter button {
   display: inline-flex;

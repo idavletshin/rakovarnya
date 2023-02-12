@@ -51,7 +51,7 @@
   position: absolute;
   top: 105%;
   width: 100%;
-  max-height: 8.125rem;
+  /* max-height: 8.125rem; */
   background: var(--color-white-darker);
   border-radius: var(--radius);
   z-index: 15;

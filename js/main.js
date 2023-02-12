@@ -55,6 +55,8 @@ document.querySelectorAll('.category-menu__link').forEach(link => {
 
     let offsetTop = 0;
     if (window.innerWidth < 991.98) {
+      offsetTop = eval("170 + 0 * ((100 - 320) / 920)");
+    } else if (window.innerWidth < 767.98) {
       offsetTop = eval("110 + 0 * ((100 - 320) / 920)");
     } else {
       offsetTop = 200;
@@ -68,11 +70,11 @@ document.querySelectorAll('.category-menu__link').forEach(link => {
 });
 
 /* disable double click in safari on phone */
-// document.addEventListener('touchstart', function (event) {
-//   if (event.touches.length > 1) {
-//     event.preventDefault();
-//   }
-// }, false);
+document.addEventListener('touchstart', function (event) {
+  if (event.touches.length > 1) {
+    event.preventDefault();
+  }
+}, false);
 
 /* anchors for menu */
 // document.querySelectorAll('.category-menu__link').forEach(link => {

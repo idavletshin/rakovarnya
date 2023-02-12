@@ -206,6 +206,9 @@ textarea.form-control {
   width: 100%;
   max-width: 21.25rem;
 }
+.order-item__box .actions-product {
+  /* margin-top: auto; */
+}
 .order-item__image {
   position: relative;
   display: flex;

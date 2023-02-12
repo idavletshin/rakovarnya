@@ -19,6 +19,27 @@ window.addEventListener('scroll', () => {
 })
 
 /* anchors for menu */
+// document.querySelectorAll('.category-menu__link').forEach(link => {
+//   link.addEventListener('click', e => {
+//     e.preventDefault();
+
+//     const id = link.getAttribute('href');
+//     const target = document.querySelector(id);
+
+//     let offsetTop = 0;
+//     if (window.innerWidth < 991.98) {
+//       offsetTop = eval("110 + 0 * ((100 - 320) / 920)")
+//     } else {
+//       offsetTop = 200;
+//     }
+
+//     window.scroll({
+//       top: target.offsetTop - offsetTop,
+//       behavior: 'smooth'
+//     });
+//   });
+// });
+
 document.querySelectorAll('.category-menu__link').forEach(link => {
   link.addEventListener('click', e => {
     e.preventDefault();
@@ -33,10 +54,17 @@ document.querySelectorAll('.category-menu__link').forEach(link => {
       offsetTop = 200;
     }
 
-    window.scroll({
-      top: target.offsetTop - offsetTop,
-      behavior: 'smooth'
-    });
+    // Check if Safari on desktop
+    if (navigator.vendor && navigator.vendor.indexOf('Apple') > -1 &&
+      navigator.userAgent && !navigator.userAgent.match('CriOS')) {
+      window.scroll(0, target.offsetTop - offsetTop);
+    } else {
+      window.scroll({
+        top: target.offsetTop - offsetTop,
+        behavior: 'smooth'
+      });
+    }
+
   });
 });
 

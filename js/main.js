@@ -18,6 +18,7 @@ window.addEventListener('scroll', () => {
   }
 })
 
+/* anchors for menu */
 // document.querySelectorAll('.category-menu__link').forEach(link => {
 //   link.addEventListener('click', e => {
 //     e.preventDefault();
@@ -39,41 +40,6 @@ window.addEventListener('scroll', () => {
 //   });
 // });
 
-// document.querySelectorAll('.category-menu__link').forEach(link => {
-//   link.addEventListener('click', e => {
-//     e.preventDefault();
-
-//     const id = link.getAttribute('href');
-//     const target = document.querySelector(id);
-
-//     let offsetTop = 0;
-//     if (window.innerWidth < 991.98) {
-//       offsetTop = eval("110 + 0 * ((100 - 320) / 920)")
-//     } else {
-//       offsetTop = 200;
-//     }
-
-//     if (navigator.vendor && navigator.vendor.indexOf('Apple') > -1 &&
-//       navigator.userAgent && !navigator.userAgent.match('CriOS')) {
-//       window.scroll(0, target.offsetTop - offsetTop);
-//     } else {
-//       window.scroll({
-//         top: target.offsetTop - offsetTop,
-//         behavior: 'smooth'
-//       });
-//     }
-
-//   });
-// });
-
-/* disable double click in safari on phone */
-document.addEventListener('touchstart', function (event) {
-  if (event.touches.length > 1) {
-    event.preventDefault();
-  }
-}, false);
-
-/* anchors for menu */
 document.querySelectorAll('.category-menu__link').forEach(link => {
   link.addEventListener('click', e => {
     e.preventDefault();
@@ -94,22 +60,53 @@ document.querySelectorAll('.category-menu__link').forEach(link => {
       offsetTop = 200;
     }
 
-    // Check if Safari on desktop
-    if (navigator.vendor && navigator.vendor.indexOf('Apple') > -1 &&
-      navigator.userAgent && !navigator.userAgent.match('CriOS')) {
-      window.scroll(0, target.offsetTop - offsetTop);
-    } else {
-      window.scroll({
-        top: target.offsetTop - offsetTop,
-        behavior: 'smooth'
-      });
-    }
-    // window.scroll({
-    //   top: target.offsetTop - offsetTop,
-    //   behavior: 'smooth'
-    // });
+    window.scroll({
+      top: target.offsetTop - offsetTop,
+      behavior: 'smooth'
+    });
   });
 });
+
+/* disable double click in safari on phone */
+// document.addEventListener('touchstart', function (event) {
+//   if (event.touches.length > 1) {
+//     event.preventDefault();
+//   }
+// }, false);
+
+/* anchors for menu */
+// document.querySelectorAll('.category-menu__link').forEach(link => {
+//   link.addEventListener('click', e => {
+//     e.preventDefault();
+
+//     document.querySelectorAll('.category-menu__link').forEach(l => {
+//       l.classList.remove('_active');
+//     });
+
+//     link.classList.add('_active');
+
+//     const id = link.getAttribute('href');
+//     const target = document.querySelector(id);
+
+//     let offsetTop = 0;
+//     if (window.innerWidth < 991.98) {
+//       offsetTop = eval("110 + 0 * ((100 - 320) / 920)");
+//     } else {
+//       offsetTop = 200;
+//     }
+
+//     // Check if Safari on desktop
+//     if (navigator.vendor && navigator.vendor.indexOf('Apple') > -1 &&
+//       navigator.userAgent && !navigator.userAgent.match('CriOS')) {
+//       window.scroll(0, target.offsetTop - offsetTop);
+//     } else {
+//       window.scroll({
+//         top: target.offsetTop - offsetTop,
+//         behavior: 'smooth'
+//       });
+//     }
+//   });
+// });
 
 /* burger */
 const burger = document.querySelector(".burger");

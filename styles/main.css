@@ -576,7 +576,6 @@ input[type="button"] {
   overflow: hidden;
 }
 .counter__value {
-  -webkit-appearance: none;
   width: 100%;
   color: var(--color-white);
   font-size: 0.875rem;
@@ -585,6 +584,7 @@ input[type="button"] {
   background: var(--color-danger-light);
   border: none;
 }
+input[type="text"]:disabled,
 .counter__value:disabled {
   -webkit-text-fill-color: var(--color-white);
   background: var(--color-danger-light);

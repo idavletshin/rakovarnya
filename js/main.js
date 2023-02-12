@@ -19,27 +19,6 @@ window.addEventListener('scroll', () => {
 })
 
 /* anchors for menu */
-// document.querySelectorAll('.category-menu__link').forEach(link => {
-//   link.addEventListener('click', e => {
-//     e.preventDefault();
-
-//     const id = link.getAttribute('href');
-//     const target = document.querySelector(id);
-
-//     let offsetTop = 0;
-//     if (window.innerWidth < 991.98) {
-//       offsetTop = eval("110 + 0 * ((100 - 320) / 920)")
-//     } else {
-//       offsetTop = 200;
-//     }
-
-//     window.scroll({
-//       top: target.offsetTop - offsetTop,
-//       behavior: 'smooth'
-//     });
-//   });
-// });
-
 document.querySelectorAll('.category-menu__link').forEach(link => {
   link.addEventListener('click', e => {
     e.preventDefault();
@@ -75,40 +54,6 @@ document.addEventListener('touchstart', function (event) {
     event.preventDefault();
   }
 }, false);
-
-/* anchors for menu */
-// document.querySelectorAll('.category-menu__link').forEach(link => {
-//   link.addEventListener('click', e => {
-//     e.preventDefault();
-
-//     document.querySelectorAll('.category-menu__link').forEach(l => {
-//       l.classList.remove('_active');
-//     });
-
-//     link.classList.add('_active');
-
-//     const id = link.getAttribute('href');
-//     const target = document.querySelector(id);
-
-//     let offsetTop = 0;
-//     if (window.innerWidth < 991.98) {
-//       offsetTop = eval("110 + 0 * ((100 - 320) / 920)");
-//     } else {
-//       offsetTop = 200;
-//     }
-
-//     // Check if Safari on desktop
-//     if (navigator.vendor && navigator.vendor.indexOf('Apple') > -1 &&
-//       navigator.userAgent && !navigator.userAgent.match('CriOS')) {
-//       window.scroll(0, target.offsetTop - offsetTop);
-//     } else {
-//       window.scroll({
-//         top: target.offsetTop - offsetTop,
-//         behavior: 'smooth'
-//       });
-//     }
-//   });
-// });
 
 /* burger */
 const burger = document.querySelector(".burger");
@@ -248,3 +193,70 @@ function hideAllLists() {
     list.style.display = 'none';
   });
 }
+
+// (function () {
+//   var sections = document.querySelectorAll('.category-menu__item');
+//   var header = document.querySelector('.header');
+//   var headerHeight = header.offsetHeight;
+//   var nav = document.querySelector('.category-menu__list');
+//   var navHeight = nav.offsetHeight;
+
+//   window.addEventListener('scroll', function () {
+//     var curPos = window.pageYOffset;
+//     sections.forEach(function (section) {
+//       var top = section.offsetTop - navHeight;
+//       var bottom = top + section.offsetHeight;
+
+//       if (curPos >= top && curPos <= bottom) {
+//         var activeLinks = nav.querySelectorAll('._active');
+//         activeLinks.forEach(function (link) {
+//           link.classList.remove('_active');
+//         });
+
+//         var activeSections = document.querySelectorAll('._active');
+//         activeSections.forEach(function (sec) {
+//           sec.classList.remove('_active');
+//         });
+
+//         section.classList.add('active');
+//         var selector = 'a[href="#' + section.id + '"]';
+//         var matchingLink = nav.querySelector(selector);
+//         matchingLink.classList.add('_active');
+//       }
+//     });
+//   });
+
+//   nav.addEventListener('click', function (event) {
+//     if (event.target.tagName === 'A') {
+//       event.preventDefault();
+//       var id = event.target.getAttribute('href');
+//       var targetSection = document.querySelector(id);
+//       window.scroll({
+//         top: targetSection.offsetTop - navHeight - headerHeight,
+//         left: 0,
+//         behavior: 'smooth'
+//       });
+//     }
+//   });
+
+//   function clickScroll() {
+//     var menuCatLinks = document.querySelectorAll('.category-menu__link');
+//     menuCatLinks.forEach(function (link) {
+//       link.addEventListener('click', function (event) {
+//         event.preventDefault();
+//         var id = link.getAttribute('href');
+//         var targetSection = document.querySelector(id);
+//         window.scroll({
+//           top: targetSection.offsetTop - headerHeight.offsetHeight - nav.offsetHeight * 1.15,
+//           left: 0,
+//           behavior: 'smooth'
+//         });
+//       });
+//     });
+//   }
+
+//   document.addEventListener('DOMContentLoaded', function () {
+//     clickScroll();
+//   });
+
+// })();
